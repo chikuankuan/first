@@ -1,4 +1,4 @@
 FROM nginx
 RUN echo '<h1>Hello, Docker! personal again and again </h1>' > /usr/share/nginx/html/index.html
 ARG env_name=local
-echo $env_name
+RUN echo $env_name > name.txt
